@@ -1,0 +1,123 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'> -->
+        
+      </head>
+      <body>
+        <main id="container">
+          <div class="start_container">
+            <div class="start_btn"><button>Start Quiz</button></div>
+            <div class="leaderboard"><button>Exit</button></div>
+          </div>
+  
+          <div class="name_box">
+            <input type="text" class="name" placeholder="What's your name?" />
+            <input type="button" class="name_btn" value="Okay! Let's get started." />
+          </div>
+  
+          <div class="instructions">
+            <div class="info_title">
+              <span>Rules in this Quiz</span>
+            </div>
+            <div class="info_list">
+              <div class="info">
+                1. You have only
+                <span>15 second</span> per
+                question.
+              </div>
+              <div class="info">
+                2. Once you have selected your answer, you cannot re-select it.
+              </div>
+              <div class="info">
+                3. You cannot select any option after the time is up.
+              </div>
+              <div class="info">
+                4. You cannot exit Quiz while you are playing.
+              </div>
+              <div class="info">
+                5. Once you are done click "Submit Score" to enter the leadeboard.
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="quit">Give up</button>
+              <button class="restart">Continue</button>
+            </div>
+          </div>
+          <div class="math-quiz">
+            <header>
+              <div class="title">Quiz Mathematics</div>
+              <div class="timer">
+                <div class="time_text">Remaining time</div>
+                <div class="timer_sec">15</div>
+              </div>
+              <div class="time_line"></div>
+            </header>
+            <section>
+              <div>
+                <span id="questions"
+                  ><p id="num1"></p>
+                  X
+                  <p id="num2"></p
+                ></span>
+              </div>
+              <div class="option_list">
+                <div class="option" id="option1"></div>
+                <div class="option" id="option2"></div>
+                <div class="option" id="option3"></div>
+                <div class="option" id="option4"></div>
+              </div>
+            </section>
+            <footer>
+              <div class="points">
+                <div class="point_text">Your score</div>
+                <div class="point_no">0</div>
+              </div>
+              <button class="next_btn">Show Results</button>
+            </footer>
+          </div>
+          <div class="result_box">
+           <!--<div>
+                Highest Score:
+              <p>2053 Points</p>
+            </div>-->
+            <div class="icon">
+              <i class="fas fa-crown"></i>
+            </div>
+           <div class="complete_text">
+                2053 Points Congratulations! You have successfully completed the Quiz.
+            </div>
+            <div class="score_text"> Animay</div>
+            <div class="buttons">
+              <!--<button class="restart">Submit My Score</button>-->
+              <button class="quit">Play again</button>
+            </div>
+          </div>
+        </main>
+        <!--<a
+          id="leaderboard_link"
+          href="https://drive.google.com/file/d/1m0WULlae5pYoBCkdNt1zS-QC65aSoot_/view?usp=sharing"
+          target="_blank"
+        ></a>
+        <a id="link" target="_blank"></a>-->
+        
+  
+</div>
+<!--<svg style="position:fixed; top:100vh">
+  <defs>
+    <filter id="blob">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+      <!--feComposite(in="SourceGraphic" in2="blob" operator="atop") //After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect--
+    </filter>
+  </defs>
+</svg>-->
+      </body>
+  
+      <script type="text/javascript" src="index.js"></script>
+    </html>
+  </DOCTYPE>
